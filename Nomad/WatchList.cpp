@@ -52,8 +52,20 @@ void WatchList::add(int* item, std::string name)
 	newItem.name = name;
 	newItem.type = "int";
 	items.push_back(newItem);
-
 }
+
+void WatchList::add(float* item, std::string name)
+{
+	watchItem newItem;
+	newItem.address = item;
+	newItem.byteSize = sizeof(item);
+	newItem.value = std::to_string(*item);
+	newItem.name = name;
+	newItem.type = "float";
+	items.push_back(newItem);
+}
+
+
 
 void WatchList::drawItem(watchItem item, int itemIndex)
 {
@@ -357,7 +369,7 @@ void WatchList::updateHover(sf::Vector2i mousePos)
 	{
 		selectedIndex = hoverIndex;
 		selectionChanged = true;
-		selectedAdress = &items.at(selectedIndex);
+		selectedAdress = items.at(selectedIndex).address;
 	}
 
 	//WATCHLIST WINDOW HOVER

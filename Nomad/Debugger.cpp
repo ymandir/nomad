@@ -44,13 +44,16 @@ void Debugger::start()
 
 
 }
-void Debugger::add(int& watchValue, std::string name)
-{	
 
-	watchList->add(&watchValue, name);
-
+void Debugger::add(int& value, std::string name)
+{
+	watchList->add(&value,name);
 }
 
+void Debugger::add(float& value, std::string name)
+{
+	watchList->add(&value, name);
+}
 
 void Debugger::update()
 {

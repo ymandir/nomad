@@ -10,13 +10,14 @@
 int main()
 {
 	Debugger debugger;
-	int abc = 500;
+	int a = 0;
 
 
 	debugger.start();
-	debugger.add(abc, "newValue1");
-	debugger.add(abc, "newValu3");
-	debugger.add(abc, "newValue");
+	debugger.add(a, "int");
+	//debugger.add(cba, "integer");
+
+
 
 	
 	return 0;

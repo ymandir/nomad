@@ -16,7 +16,8 @@ public:
 
 
 	void start();
-	void add(int&,std::string);
+	void add(int&, std::string);
+	void add(float&,std::string);
 
 	Debugger();
 	~Debugger();

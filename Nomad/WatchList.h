@@ -43,6 +43,9 @@ public:
 	sf::Sprite getSprite();
 
 	void add(int* item, std::string name);
+	void add(float* item, std::string name);
+
+
 	void addArray(int* item, int size);
 
 	void updateItems();
