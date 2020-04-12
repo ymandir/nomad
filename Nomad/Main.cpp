@@ -1,7 +1,4 @@
-#include <SFML/Graphics.hpp>
-#include <iostream>
-#include "WatchList.h"
-#include "Memory.h"
+
 #include "Debugger.h"
 
 
@@ -15,8 +12,18 @@ int main()
 
 	debugger.start();
 	debugger.add(a, "int");
-	//debugger.add(cba, "integer");
 
+	int cap = 100;
+	sf::Clock clock;
+	while (a < cap)
+	{
+	
+		if (clock.getElapsedTime().asMilliseconds() > 1000)
+		{
+			clock.restart();
+			a++;
+		}
+	}
 
 
 	

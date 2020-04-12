@@ -58,6 +58,7 @@ void Debugger::add(float& value, std::string name)
 void Debugger::update()
 {
 	int a = 255;
+	/*
 	int b = 100;
 	int c = 400;
 	int d = 100;
@@ -76,14 +77,13 @@ void Debugger::update()
 	watchList->add(&f, "f");
 	watchList->add(&g, "g");
 	watchList->add(&h, "h");
+	*/
 
 
 	memory.setStart(&a);
 
 
-
-
-	sf::RenderWindow window(sf::VideoMode(1920 / 2, 1080), "NOMAD");
+	sf::RenderWindow window(sf::VideoMode(1920 / 2, 1080), "NOMAD", sf::Style::Titlebar | sf::Style::Close);
 	window.setFramerateLimit(60);
 
 	while (window.isOpen())
