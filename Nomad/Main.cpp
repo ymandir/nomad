@@ -17,8 +17,7 @@ int main()
 	sf::Clock clock;
 	while (a < cap)
 	{
-	
-		if (clock.getElapsedTime().asMilliseconds() > 1000)
+			if (clock.getElapsedTime().asMilliseconds() > 1000)
 		{
 			clock.restart();
 			a++;

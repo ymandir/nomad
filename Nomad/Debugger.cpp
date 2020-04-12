@@ -58,28 +58,6 @@ void Debugger::add(float& value, std::string name)
 void Debugger::update()
 {
 	int a = 255;
-	/*
-	int b = 100;
-	int c = 400;
-	int d = 100;
-	int e = 400;
-	int f = 200;
-	int g = 200;
-	int h = 200;
-
-
-
-	watchList->add(&a, "a");
-	watchList->add(&b, "b");
-	watchList->add(&c, "c");
-	watchList->add(&d, "d");
-	watchList->add(&e, "e");
-	watchList->add(&f, "f");
-	watchList->add(&g, "g");
-	watchList->add(&h, "h");
-	*/
-
-
 	memory.setStart(&a);
 
 
