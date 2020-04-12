@@ -23,7 +23,21 @@ int main ()
 }
 ```
 
-And when you run the application : 
-
 ![monsterHP](https://user-images.githubusercontent.com/62177295/79069688-dbc32180-7cd8-11ea-81a6-abbb6c0cda70.png)
+
+## How to use the window? 
+
+Nomad window is composed of two tabs: watchlist and memory. 
+
+- Switch between tabs: CTRL + UP / CRTL + DOWN
+- Scroll on the active tab: UP / DOWN
+
+## How do I link it?
+
+Just get the most recent release and link it like any other external library and don't forget to unlink before publishing a release :)
+
+## Tell me about the current state of developement
+
+It is very early but I still encourage anyone to try it out and see if they like the idea or not. Many great features are going to be added in the near future. 
+
 
